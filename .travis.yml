@@ -14,21 +14,11 @@ env:
   global:
   - DOCKER_EMAIL=alban.boye1@gmail.com
   - DOCKER_USERNAME=blafy
+  - secure: uMgqEoCpVu7ACgBmjg3NMCasG/ocp/CButL0Pm4S4gl5np5Vmc6ZvlYqnaoHM54dfdsX97yHEvBntwOEwGFnnk2RKXpjTyci7Ia3jdFI62QhhnTIZD1N2LYqfqrbvCAcKKsRMx4JXIbv+id4eBSIs0wlgDiXOywC3HS/QlrvSmI6RqiXK23uBH0LWvYKvedkg6nVt/YhzkKNbqRD4k0xaLGp0byEUg9dn5fpR3YmK7OJApJVQvIGYsQ5yVwC9LFJ8taF7rjzcg8AwgPMhXX6kz6IXeOL9dai21iUy75mfJOBUTc3Oj/xD76r7pUs+c83Fxnf9bxRevghh2p0s9gIIV2FUVXwlxVoQ8EtvXtK4I4Uf4dX5Ab4JFj9nbrZQlZqPrGZXeD5j5MEXwcirBTtWBmiZ7oCJKBHO1Nn6M8779xpVUGUBPrrtYk70LR+pqm90IR2fHXzdRXTSAAiQpRpywQikPpD2M655n4VPhKwhLxJKaB77Law6SVjBeTvSQFV2QfMqSvJeST6IwrRGbENBEJ797k2nUYdezr5xcQ/dh3fBReWIiAc48cxS0uCNRpJ7q1uVfr5FxTEYQQcllqImq+JMkVgRJISHLQpU1KyTgu6NCz/xfdS0MhNBi/7JmkWtY5Xx2dsSQutvjPXzJVdgRE+R5kkXxacwjs8YfzeT2c=
 jobs:
   include:
   - script: true
     stage: precache
   - stage: build
-    # --
-    # jekyll/jekyll
-    # --
-    env: "\
-      DOCKER_REPO='\
-        jekyll:3.8.5 \
-        jekyll:stable \
-        jekyll:latest \
-        jekyll:pages \
-        jekyll:3.8 \
-        jekyll:3\
-      '\
-    "
+    env: DOCKER_REPO='jekyll:3.8.5 jekyll:stable jekyll:latest jekyll:pages jekyll:3.8
+      jekyll:3'
