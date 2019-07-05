@@ -1,6 +1,14 @@
-FROM ruby:alpine
+#TODO: remove fixed ruby version ?
+
+FROM arm32v6/ruby:2.6-alpine
+#FROM arm32v7/ruby:2.6-alpine
+
+#FROM ruby:alpine
 LABEL maintainer "Jordon Bedwell <jordon@envygeeks.io>"
 COPY copy /
+
+# ARM static interpreter
+RUN chmod +x /usr/bin/qemu-arm-static
 
 # --
 # EnvVars
