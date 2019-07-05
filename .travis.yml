@@ -10,6 +10,7 @@ cache:
 branches:
   only:
   - master
+  - arm64
 env:
   global:
   - DOCKER_EMAIL=alban.boye1@gmail.com
