@@ -21,5 +21,4 @@ jobs:
   - script: true
     stage: precache
   - stage: build
-    env: DOCKER_REPO='blafy/jekyll:3.8.5 blafy/jekyll:stable blafy/jekyll:latest blafy/jekyll:pages blafy/jekyll:3.8
-      blafy/jekyll:3'
+    env: DOCKER_REPO='blafy/jekyll:arm64'
