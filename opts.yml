@@ -1,10 +1,10 @@
 maintainer: Jordon Bedwell <jordon@envygeeks.io>
 user: jekyll
 aliases:
-  latest: 3.8.5
-  stable: 3.8.5
-  3.8: 3.8.5
-  3: 3.8.5
+  latest-aarch64: 3.8.5
+  stable-aarch64: 3.8.5
+  3.8-aarch64: 3.8.5
+  3-aarch64: 3.8.5
 tags:
   3.8.5: stable
   pages: pages
