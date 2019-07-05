@@ -12,13 +12,8 @@ branches:
   - master
 env:
   global:
-  - DOCKER_EMAIL=jordon@envygeeks.io
-  - DOCKER_USERNAME=envygeeks
-  - secure: "\
-      Vp8S6Pevc4pidnNM1NZx/1rCckOFc5C90a/0c6F/fIhGiOfl3o3yaUBKqbBLNTYxYCH8J0Hko\
-      S/Y5Xs2K5XMlsnQXXxeBQntDVMS6XX5q7j65EcK+bRNUxOo2A51rw0jUmPDNa2i7g90sNExjW\
-      XYh03nFe6cbXXHrLdrOt4+A4I=
-    "
+  - DOCKER_EMAIL=alban.boye1@gmail.com
+  - DOCKER_USERNAME=blafy
 jobs:
   include:
   - script: true
@@ -35,33 +30,5 @@ jobs:
         jekyll:pages \
         jekyll:3.8 \
         jekyll:3\
-      '\
-    "
-  # --
-  # jekyll/builder
-  # --
-  - env: "\
-      DOCKER_REPO='\
-        builder:3.8.5 \
-        builder:stable \
-        builder:latest \
-        jekyll:builder \
-        builder:pages \
-        builder:3.8 \
-        builder:3\
-      '\
-    "
-  # --
-  # jekyll/minimal
-  # --
-  - env: "\
-      DOCKER_REPO='\
-        minimal:3.8.5 \
-        minimal:stable \
-        minimal:latest \
-        jekyll:minimal \
-        minimal:pages \
-        minimal:3.8 \
-        minimal:3\
       '\
     "
