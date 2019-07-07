@@ -21,4 +21,16 @@ jobs:
   - script: true
     stage: precache
   - stage: build
-    env: DOCKER_REPO='blafy/jekyll:3.8.5 blafy/jekyll:stable blafy/jekyll:latest blafy/jekyll:pages blafy/jekyll:3.8 blafy/jekyll:3'
+    env:
+      - DOCKER_REPO='blafy/jekyll:stable-arm'
+      - IMAGE_ARCH=arm32v6
+      - ARCH=arm
+jobs:
+  include:
+  - script: true
+    stage: precache
+  - stage: build
+    env:
+      - DOCKER_REPO='blafy/jekyll:stable-arm64'
+      - IMAGE_ARCH=arm64v8
+      - ARCH=aarch64

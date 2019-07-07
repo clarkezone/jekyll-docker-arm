@@ -3,6 +3,8 @@ user: jekyll
 aliases:
   latest: 3.8.5
   stable: 3.8.5
+  stable-arm: 3.8.5
+  stable-arm64: 3.8.5
   3.8: 3.8.5
   3: 3.8.5
 tags:
