@@ -176,6 +176,7 @@ RUN rm -rf /root/.gem
 RUN rm -rf /home/jekyll/.gem
 RUN rm -rf $BUNDLE_HOME/cache
 RUN rm -rf $GEM_HOME/cache
+RUN rm -rf /usr/bin/qemu-aarch64-static
 
 # --
 CMD ["jekyll", "--help"]
