@@ -25,7 +25,7 @@ else
     # using v3, getting some errors with qemu-arm-static v4.0.0-5
 
     cp qemu-aarch64-static repos/jekyll/copy/all/usr/bin/
-    #chmod +x repos/jekyll/copy/all/usr/bin/qemu-aarch64-static
+    chmod +x repos/jekyll/copy/all/usr/bin/qemu-aarch64-static
 
     docker run --rm --privileged multiarch/qemu-user-static:register --reset
 
