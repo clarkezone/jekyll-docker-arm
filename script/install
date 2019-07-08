@@ -24,8 +24,8 @@ else
     wget https://github.com/multiarch/qemu-user-static/releases/download/v3.1.0-2/qemu-"$ARCH"-static
     # using v3, getting some errors with qemu-arm-static v4.0.0-5
 
-    cp qemu-arm-static repos/jekyll/copy/all/usr/bin/
-    chmod +x repos/jekyll/copy/all/usr/bin/qemu-arm-static
+    cp qemu-"$ARCH"-static repos/jekyll/copy/all/usr/bin/
+    chmod +x repos/jekyll/copy/all/usr/bin/qemu-"$ARCH"-static
 
     docker run --rm --privileged multiarch/qemu-user-static:register --reset
 
