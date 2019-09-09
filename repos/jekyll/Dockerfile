@@ -1,6 +1,6 @@
 #TODO: remove fixed ruby version ?
 
-FROM ${IMAGE_ARCH}/ruby:2.6-alpine
+FROM <%= @meta.tag %>/ruby:2.6-alpine
 #FROM arm32v7/ruby:2.6-alpine
 
 #FROM ruby:alpine

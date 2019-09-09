@@ -17,7 +17,7 @@ else
 
     # install qemu-user-satic for ARM build
     sudo apt-get -qq update
-    sudo apt-get install qemu-user-static # TODO: remove this line
+    #sudo apt-get install qemu-user-static # TODO: remove this line
 
     mkdir -p repos/jekyll/copy/all/usr/bin/
 

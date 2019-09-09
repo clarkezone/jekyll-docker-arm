@@ -26,3 +26,6 @@ gems:
     pages:
       - jekyll-github-metadata
       - github-pages
+images:
+  stable-arm: arm32v6
+  stable-arm64: arm64v8
